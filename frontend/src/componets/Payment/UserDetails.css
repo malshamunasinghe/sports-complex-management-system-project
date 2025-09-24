@@ -1,0 +1,44 @@
+.user-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+.users-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 0;
+  background: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.user-actions {
+  margin-top: 10px;
+}
+
+.user-actions button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.user-actions button:first-child {
+  background-color: #4caf50;
+  color: white;
+}
+
+.user-actions button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
