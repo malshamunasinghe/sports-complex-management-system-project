@@ -1,0 +1,109 @@
+/* ✅ Container */
+.view-event-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  background: #f7fafc; /* Light gray background */
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #2d3748; /* Dark gray text */
+}
+
+/* ✅ Event Card */
+.event-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ✅ Event Image */
+.event-image {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+}
+
+/* ✅ Content Area */
+.event-content {
+  padding: 30px;
+  color: #2d3748;
+}
+
+/* ✅ Title */
+.event-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #2b6cb0; /* Blue accent */
+  font-weight: 700;
+}
+
+/* ✅ Description */
+.event-description {
+  font-size: 16px;
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* ✅ Event Details Box */
+.event-details {
+  background: #f9fafb;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border: 1px solid #e2e8f0;
+}
+
+.event-details p {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #2d3748;
+}
+
+.event-details span {
+  font-weight: 600;
+  color: #10b981; /* Green accent */
+}
+
+/* ✅ Button Group */
+.button-group {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+/* ✅ Back Button */
+.btn-back {
+  background: #3182ce; /* Blue button */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background: #2c5aa0;
+}
+
+/* ✅ Loader */
+.loading {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 18px;
+  color: #4a5568;
+}

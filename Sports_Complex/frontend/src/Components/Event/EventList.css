@@ -1,0 +1,488 @@
+/* Container */
+.event-list {
+  padding: 24px;
+  background: #f9fafb;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2d3748;
+}
+
+/* Page Header */
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.event-list h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #2b6cb0;
+}
+
+.page-description {
+  font-size: 16px;
+  color: #4a5568;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Filters row */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+  justify-content: center;
+}
+
+/* Search bars & select & date input */
+.search-bar {
+  padding: 10px 14px;
+  border: 1px solid #3182ce;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #2d3748;
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #2c5aa0;
+}
+
+/* Date picker input */
+.date-picker {
+  background: #ffffff;
+  color: #2d3748;
+  border: 1px solid #3182ce;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.date-picker:focus {
+  outline: none;
+  border-color: #2c5aa0;
+}
+
+/* Calendar icon */
+.date-picker::-webkit-calendar-picker-indicator {
+  background-color: #2b6cb0;
+  color: #ffffff;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+.date-picker::placeholder {
+  color: #3182ce;
+}
+
+/* Dropdown select style */
+.search-bar option {
+  background: #ffffff;
+  color: #2d3748;
+}
+
+/* Table styles */
+.event-list table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.event-list table thead {
+  background: #f7fafc;
+  color: #2d3748;
+  text-align: left;
+}
+
+.event-list table th,
+.event-list table td {
+  padding: 14px 18px;
+  font-size: 14px;
+}
+
+.event-list table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+  transition: background 0.2s ease;
+}
+
+.event-list table tbody tr:hover {
+  background: #f3f4f6;
+}
+
+/* Buttons */
+.btn-edit,
+.btn-delete,
+.btn-view,
+.btn-view-registrations {
+  padding: 8px 12px;
+  margin-right: 6px;
+  font-size: 13px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+/* Edit button */
+.btn-edit {
+  background: #3182ce;
+  color: #ffffff;
+}
+.btn-edit:hover {
+  background: #2c5aa0;
+}
+
+/* Delete button */
+.btn-delete {
+  background: #ef4444;
+  color: #ffffff;
+}
+.btn-delete:hover {
+  background: #dc2626;
+}
+
+/* View Details button */
+.btn-view {
+  background: linear-gradient(135deg, #ffffff 60%, #3182ce 100%);
+  color: #2d3748;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(49,130,206,0.3);
+  transition: all 0.3s ease-in-out;
+}
+.btn-view:hover {
+  background: linear-gradient(135deg, #3182ce 60%, #ffffff 100%);
+  color: #fff;
+  box-shadow: 0 0 14px rgba(49,130,206,0.6);
+}
+
+/* View Registrations button */
+.btn-view-registrations {
+  background: #ffffff;
+  color: #10b981;
+  border: 1px solid #10b981;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn-view-registrations:hover {
+  background: #10b981;
+  color: #fff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+  }
+  .search-bar {
+    width: 100%;
+  }
+  .event-list table th,
+  .event-list table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+/* Event Registrations Page Styles */
+.event-registrations-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.header-section {
+  margin-bottom: 25px;
+}
+
+.event-registrations-container h2 {
+  margin-bottom: 15px;
+  color: #2d3748;
+  font-size: 28px;
+}
+
+.event-info {
+  background: #f7fafc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.event-info h3 {
+  margin: 0 0 8px 0;
+  color: #2b6cb0;
+  font-size: 20px;
+}
+
+.event-info p {
+  margin: 0;
+  color: #4a5568;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.back-btn, .reminder-btn, .debug-btn, .test-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.back-btn {
+  background-color: #4a5568;
+  color: #fff;
+}
+
+.back-btn:hover {
+  background-color: #2d3748;
+}
+
+.reminder-btn {
+  background-color: #3182ce;
+  color: #fff;
+}
+
+.reminder-btn:hover {
+  background-color: #2c5aa0;
+}
+
+.debug-btn {
+  background-color: #7c3aed;
+  color: #fff;
+}
+
+.debug-btn:hover {
+  background-color: #6d28d9;
+}
+
+.test-btn {
+  background-color: #10b981;
+  color: #fff;
+}
+
+.test-btn:hover {
+  background-color: #059669;
+}
+
+/* Registration Stats */
+.registrations-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.stat-item {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.stat-number {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Registrations Table */
+.event-registrations-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.event-registrations-table th {
+  background: #f7fafc;
+  padding: 15px 12px;
+  font-weight: 600;
+  color: #2d3748;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.event-registrations-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: middle;
+}
+
+.event-registrations-table tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Status Badge */
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.approved {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Action Buttons in Table */
+.approve-btn, .reject-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.approve-btn {
+  background-color: #10b981;
+  color: #fff;
+}
+
+.approve-btn:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+}
+
+.reject-btn {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+.reject-btn:hover {
+  background-color: #dc2626;
+  transform: translateY(-1px);
+}
+
+/* Action Completed Text */
+.action-completed {
+  font-size: 12px;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal h3 {
+  margin: 0 0 15px 0;
+  color: #2d3748;
+}
+
+.modal p {
+  margin: 0 0 15px 0;
+  color: #4a5568;
+}
+
+.modal textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.cancel-btn, .confirm-reject-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.cancel-btn {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.cancel-btn:hover {
+  background: #e5e7eb;
+}
+
+.confirm-reject-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.confirm-reject-btn:hover {
+  background: #dc2626;
+}

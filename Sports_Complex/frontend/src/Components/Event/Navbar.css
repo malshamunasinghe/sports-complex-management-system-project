@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  /* ✅ Black–green gradient */
+  background: linear-gradient(90deg, #ffffff, #ffffff);
+  color: #ffffff;
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #100e0e; /* ensure logo text stays white */
+}
+
+.navbar .links a {
+  color: #000000; /* white links */
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .links a:hover {
+  /* ✅ Green highlight on hover */
+  color: #090b0a;
+  text-decoration: underline;
+}
