@@ -13,3 +13,4 @@ A Sport Complex Management Website that allows users to view, book, and manage i
        Manage bookings and user accounts,
        View reports and analytics,
        Update schedules and prices,
+Tech Stack  -> MERN Stack
